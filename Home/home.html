@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- link css  -->
+    <link rel="stylesheet" href="home.css" />
+    <!-- link icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- start  header  -->
+    <header>
+      <div class="container-header">
+        <div class="logo">
+          <img
+            src="https://file.hstatic.net/200000536779/file/rienevan_logo_271bfeabbcc9455fbf4bcc9be193e5c6.png"
+            alt=""
+          />
+        </div>
+        <ul class="header-text">
+          <a href="#">
+            <li>Home</li>
+          </a>
+          <a href="#">
+            <li class="store">Store</li>
+          </a>
+          <a href="#">
+            <li>News</li>
+          </a>
+          <a href="#">
+            <li>Support</li>
+          </a>
+        </ul>
+        <ul class="header-icon">
+          <a href="#">
+            <li><i class="fa fa-search"></i><span>Search</span></li>
+          </a>
+          <a href="#">
+            <li><i class="fa fa-user"></i><span>Account</span></li>
+          </a>
+          <a href="#">
+            <li><i class="fa fa-shopping-cart"></i><span>Shopping</span></li>
+          </a>
+        </ul>
+      </div>
+    </header>
+    <!-- end header  -->
+
+    <!-- start body  -->
+    <body>
+      <div class="container-a">
+        <div class="text-1">
+          <p>Home page / <span>All products</span></p>
+        </div>
+        <div class="image-1"></div>
+      </div>
+      <div class="container-b">
+        <h2>All products</h2>
+        <div class="search-product">
+          <label for=""><i class="fa fa-search"></i> Filter name </label>
+          <input type="text" placeholder="search" />
+        </div>
+
+        <div class="show-product">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://product.hstatic.net/200000536779/product/snap-bg-2_4d949e15d45442e9830a5dbad8eb6970_large.png"
+                alt=""
+              />
+            </div>
+            <div class="card-content">
+              <p class="name">Sustainable Materials</p>
+              <p class="price">$20000</p>
+              <p onclick="showContent()" class="showMore-text">
+                Show more<i id="toggleIcon" class="fa fa-angle-up"></i>
+              </p>
+              <div class="showMore">
+                <div class="sizeShoes">
+                  <p>Size</p>
+                  <div class="size-product">
+                    <span class="size-Shoes-child">25</span>
+                  </div>
+                </div>
+                <div class="description">
+                  <p>This is the best shoes in the world</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    <!-- end body  -->
+    <!-- start footer  -->
+    <footer>
+      <div class="container-footer">
+        <div class="footer-a">
+          <span>Về chúng tôi</span>
+          <p>
+            TẠI RIENEVAN Mỗi ngày chúng tôi đều chăm chỉ cùng với tâm huyết, để
+            trao đến bạn những đôi giày chất lượng nhất và từng sản phẩm tạo ra
+            đều mang trong mình một giá trị thuần Việt.
+          </p>
+          <img
+            src="https://file.hstatic.net/200000536779/file/logo_2_1baacf4372e04a6ba888f0cd9d2bbdf8.png"
+            alt=""
+          />
+        </div>
+        <div class="footer-b">
+          <ul>
+            <li>Địa chỉ: thành phố Đà Nẵng</li>
+            <li>Điện thoại: 0777521722</li>
+            <li>Email: rienevan.customer@gmail.com</li>
+          </ul>
+        </div>
+        <div class="footer-c">
+          <ul>
+            <li class="first-li">Hỗ trợ khách hàng</li>
+            <li class="second-child">Giới thiệu</li>
+            <li class="second-child">Chính sách đổi trả</li>
+            <li class="second-child">Điều khoản dịch vụ</li>
+            <li class="second-child">Liên hệ</li>
+          </ul>
+        </div>
+        <div class="footer-d">
+          <p class="takecare">Chăm sóc khách hàng</p>
+          <div class="support">
+            <div class="support-icon"><i class="fa fa-address-card"></i></div>
+            <div class="support-text">
+              <p class="phone">0777521722</p>
+              <p class="email">support@gmail.com</p>
+            </div>
+          </div>
+          <p class="follow">Follow Us</p>
+          <ul>
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-youtube"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- end footer  -->
+    <!-- link axios library  -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <!-- link javascript  -->
+    <script src="home.js"></script>
+  </body>
+</html>
